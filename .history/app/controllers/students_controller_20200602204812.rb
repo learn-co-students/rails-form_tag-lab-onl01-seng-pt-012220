@@ -9,9 +9,7 @@ class StudentsController < ApplicationController
   end
 
   def new
-    if params[:format]
-      @student = Student.find_by_id(params[:format])
-    end
+    byebug
   end
 
   def create
